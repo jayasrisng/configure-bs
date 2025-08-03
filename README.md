@@ -15,8 +15,8 @@ We simulate realistic, high-resolution motion data that preserves utility (for s
 ## 🧰 Tools & Technologies
 
 - **Python** – Data pipelines and scripting
-- **PyTorch** – WGAN-GP + DP-SGD implementation
-- **Opacus** – Differential Privacy training
+- **TensorFlow** – WGAN-GP implementation and model training
+- **TensorFlow Privacy** – Differential Privacy using DP-SGD
 - **Scikit-learn** – Preprocessing and metrics
 - **Matplotlib / Seaborn** – Visualization
 - **Unity3D + SteamVR** – Telemetry data collection
