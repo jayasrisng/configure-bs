@@ -1,0 +1,47 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Privacy utility tradeoff in synthetic VR telemetry</title>
+  <desc id="desc">A conceptual chart showing the configure-bs evaluation goal: lower identity leakage while retaining aggregate motion utility.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#102a43"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="55%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+  <text x="74" y="82" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800">Privacy × utility tradeoff</text>
+  <text x="74" y="120" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">Evaluation target for synthetic Beat Saber telemetry</text>
+
+  <g transform="translate(150 150)">
+    <rect width="900" height="410" rx="28" fill="#020617" opacity="0.58" stroke="#334155"/>
+    <line x1="95" y1="330" x2="815" y2="330" stroke="#64748b" stroke-width="2"/>
+    <line x1="95" y1="330" x2="95" y2="70" stroke="#64748b" stroke-width="2"/>
+    <text x="380" y="382" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">privacy protection increases</text>
+    <text x="-210" y="58" transform="rotate(-90)" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">motion utility retained</text>
+    <path d="M120 110 C230 120, 290 145, 360 190 C455 252, 535 270, 620 282 C695 293, 755 305, 805 318" fill="none" stroke="#f97316" stroke-width="5" opacity="0.55" stroke-dasharray="10 12"/>
+    <path d="M120 292 C225 252, 325 220, 425 188 C545 150, 665 132, 805 116" fill="none" stroke="url(#line)" stroke-width="7" filter="url(#glow)"/>
+    <circle cx="120" cy="292" r="11" fill="#f97316"/>
+    <circle cx="425" cy="188" r="11" fill="#a78bfa"/>
+    <circle cx="805" cy="116" r="11" fill="#22d3ee"/>
+    <text x="132" y="284" fill="#fed7aa" font-family="Inter, Arial, sans-serif" font-size="15">raw telemetry</text>
+    <text x="440" y="180" fill="#ddd6fe" font-family="Inter, Arial, sans-serif" font-size="15">synthetic model</text>
+    <text x="650" y="106" fill="#a5f3fc" font-family="Inter, Arial, sans-serif" font-size="15">privacy-aware samples</text>
+    <text x="560" y="310" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="14">identity leakage target</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="150" y="610" fill="#e2e8f0" font-size="20" font-weight="700">What this graphic communicates</text>
+    <text x="150" y="640" fill="#94a3b8" font-size="16">The project is not just “generate data”; it evaluates whether synthetic motion traces remain useful while reducing behavioral identifiability.</text>
+  </g>
+</svg>

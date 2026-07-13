@@ -1,11 +1,11 @@
 # configure-bs Media
 
-This folder is reserved for README and project media.
+This folder contains README and project media.
 
 ## Useful assets
 
-1. `pipeline.png` — raw telemetry → preprocessing → WGAN-GP → synthetic data → evaluation.
-2. `privacy-utility.png` — diagram of privacy/utility tradeoff.
+1. `pipeline.svg` — raw telemetry → preprocessing → privacy layer → WGAN-GP → evaluation.
+2. `privacy-utility.svg` — conceptual privacy/utility tradeoff visual.
 3. `sample-plots.png` — safe plots using synthetic or non-identifying data only.
 
 ## Capture guidance

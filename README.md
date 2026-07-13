@@ -4,6 +4,8 @@
 
 `configure-bs` explores how rich VR motion telemetry can be transformed into useful synthetic data for research and analytics without exposing raw user behavior. The project combines WGAN-GP generation, differential privacy experiments, evaluation metrics, and optional encrypted analytics notebooks.
 
+![configure-bs telemetry pipeline](media/pipeline.svg)
+
 ## Problem
 
 Beat Saber and similar VR systems generate high-resolution motion traces: saber direction, speed, angular velocity, timing, hit accuracy, and user-specific play patterns. These signals are useful for skill analysis and game design, but they can also identify users.

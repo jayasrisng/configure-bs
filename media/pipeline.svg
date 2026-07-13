@@ -1,0 +1,76 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">configure-bs privacy-preserving telemetry pipeline</title>
+  <desc id="desc">A visual overview of the configure-bs workflow from VR motion telemetry through preprocessing, privacy modeling, synthetic generation, and evaluation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1020"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#061b24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#67e8f9"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+  <circle cx="1015" cy="105" r="190" fill="#06b6d4" opacity="0.08"/>
+  <circle cx="160" cy="580" r="260" fill="#8b5cf6" opacity="0.08"/>
+  <text x="72" y="82" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">configure-bs</text>
+  <text x="72" y="120" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">Privacy-preserving VR telemetry workflow</text>
+
+  <g filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <g transform="translate(70 210)">
+      <rect width="190" height="155" rx="24" fill="#101827" stroke="#334155"/>
+      <text x="24" y="44" fill="#f8fafc" font-size="20" font-weight="700">VR telemetry</text>
+      <text x="24" y="76" fill="#94a3b8" font-size="14">Saber speed</text>
+      <text x="24" y="100" fill="#94a3b8" font-size="14">Motion direction</text>
+      <text x="24" y="124" fill="#94a3b8" font-size="14">Timing + accuracy</text>
+    </g>
+    <g transform="translate(310 210)">
+      <rect width="190" height="155" rx="24" fill="#101827" stroke="#334155"/>
+      <text x="24" y="44" fill="#f8fafc" font-size="20" font-weight="700">Preprocess</text>
+      <text x="24" y="76" fill="#94a3b8" font-size="14">Clean features</text>
+      <text x="24" y="100" fill="#94a3b8" font-size="14">Normalize traces</text>
+      <text x="24" y="124" fill="#94a3b8" font-size="14">Build train sets</text>
+    </g>
+    <g transform="translate(550 210)">
+      <rect width="190" height="155" rx="24" fill="#101827" stroke="#334155"/>
+      <text x="24" y="44" fill="#f8fafc" font-size="20" font-weight="700">Privacy layer</text>
+      <text x="24" y="76" fill="#94a3b8" font-size="14">Risk baseline</text>
+      <text x="24" y="100" fill="#94a3b8" font-size="14">DP experiments</text>
+      <text x="24" y="124" fill="#94a3b8" font-size="14">Encrypted analytics</text>
+    </g>
+    <g transform="translate(790 210)">
+      <rect width="190" height="155" rx="24" fill="#101827" stroke="#334155"/>
+      <text x="24" y="44" fill="#f8fafc" font-size="20" font-weight="700">WGAN-GP</text>
+      <text x="24" y="76" fill="#94a3b8" font-size="14">Train generator</text>
+      <text x="24" y="100" fill="#94a3b8" font-size="14">Stabilize gradients</text>
+      <text x="24" y="124" fill="#94a3b8" font-size="14">Sample synthetic users</text>
+    </g>
+    <g transform="translate(1030 210)">
+      <rect width="100" height="155" rx="24" fill="url(#accent)" opacity="0.95"/>
+      <text x="24" y="50" fill="#03131a" font-size="20" font-weight="800">Eval</text>
+      <text x="24" y="83" fill="#06202c" font-size="14">Utility</text>
+      <text x="24" y="107" fill="#06202c" font-size="14">Risk</text>
+    </g>
+  </g>
+
+  <g stroke="#67e8f9" stroke-width="3" marker-end="url(#arrow)" opacity="0.9">
+    <line x1="262" y1="288" x2="300" y2="288"/>
+    <line x1="502" y1="288" x2="540" y2="288"/>
+    <line x1="742" y1="288" x2="780" y2="288"/>
+    <line x1="982" y1="288" x2="1020" y2="288"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="205" y="455" width="790" height="92" rx="24" fill="#020617" opacity="0.7" stroke="#1e293b"/>
+    <text x="240" y="492" fill="#f8fafc" font-size="22" font-weight="700">Core question</text>
+    <text x="240" y="525" fill="#cbd5e1" font-size="18">Can synthetic telemetry preserve useful motion structure while reducing re-identification risk?</text>
+  </g>
+</svg>
